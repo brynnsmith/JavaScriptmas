@@ -6,4 +6,4 @@
 
 <span>Wishing everyone a magical holiday season.</span>
 
-<span>**!!SPOILER ALERT: Files contain the solutions for each daily challenge.**</span>
+<span>**!!SPOILER ALERT: Files contain my solutions for each daily challenge.**</span>
