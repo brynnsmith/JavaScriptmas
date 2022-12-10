@@ -1,6 +1,5 @@
 function validTime(str) {
-    return str.split(':')[0] >= 0 && str.split(':')[0] <= 23
-            && str.split(':')[1] >= 0 && str.split(':')[1] <= 59
+    return str.split(':')[0] <= 23 && str.split(':')[1] <= 59
 }
 
 /**
