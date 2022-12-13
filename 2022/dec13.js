@@ -37,13 +37,9 @@ Example output: "elephant"
 */ 
 
 function emojifyWord(word){
-    const cleanedWord = word.slice(1, word.length-1)
     if (word.startsWith(":") && word.endsWith(":")) {
-        if (emojis[cleanedWord]) {
-            return emojis[cleanedWord]
-        } else {
-            return cleanedWord   
-        }
+        const cleanedWord = word.slice(1, -1)
+        return emojis[cleanedWord] ? emojis[cleanedWord] : cleanedWord   
     } else {
         return word
     }
