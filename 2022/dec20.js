@@ -21,8 +21,18 @@ Expected output:
 */
 
 function getFreePodcasts(data){
-   const freePodcasts = data.filter(podcast => podcast.paid === false)
-   return freePodcasts
-}
-
-console.log(getFreePodcasts(podcasts))
+    const freePodcasts = data.filter(podcast => podcast.paid === false)
+    let finalFreePodcastList = []
+    for (let podcast of freePodcasts) {
+        const podcastInfo = {
+             "title": podcast.title,
+             "rating": podcast.rating,
+             "paid": podcast.paid
+         }
+         finalFreePodcastList.push(podcastInfo)
+    }
+    
+    return finalFreePodcastList
+ }
+ 
+ console.log(getFreePodcasts(podcasts))
