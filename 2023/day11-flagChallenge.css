@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+    --white: #fff;
+    --red: #FF0002;
+}
+
+.flag {
+    width: 320px;
+    height: 320px;
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cross {
+    background: var(--white);
+}
+
+.cross1 {
+    position: absolute;
+    width: 62.5%;
+    height: 18.75%;
+}
+.cross2 {
+    width: 18.75%;
+    height: 62.5%;
+}
+
+.cross2 {
+    position: absolute;    
+}
