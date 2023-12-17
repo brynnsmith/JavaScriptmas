@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+h1 {
+    display: inline;
+}
+
+h1::after {
+    animation: 3s linear infinite swapWords;  
+    color: var(--bg-word); 
+    font-size: 42px;
+    content: '';
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 12px;
+}
+
+@keyframes swapWords {
+    0% {
+        content: 'Kitties';
+    }
+    25% {
+        content: 'Coding';
+    }
+    50% {
+        content: 'Swimming';
+    }
+    75% {
+        content: 'Video games';
+    }
+    100% {
+        content: 'Music';
+    }
+}
